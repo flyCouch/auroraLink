@@ -112,3 +112,13 @@ Under the Terminal category, ensure "Implicit CR in every LF" is checked to keep
 
 A Quick Tip for Windows 7:
 Since you are using a 32-bit laptop, if you find that Minicom is a bit too "Linux-heavy" for your field tests, Tera Term is a fantastic, lightweight alternative for Windows 7. It handles the 1200-baud stream very gracefully and makes it easy to log your "Geometric Bridge" signal strength tests to a text file.
+
+
+Operational Modes
+Sighting Mode (Beacon): A steady green LED allows for manual alignment between nodes.
+
+Data Mode: Automatically engages upon serial or optical activity, transmitting data via light pulses.
+
+Self-Healing: Automatically reverts to Beacon mode after 15 seconds of silence to assist in recovering a lost connection.
+
+Hard Disable (Steward's Override): Sending the command !!! twice (or once during sighting) completely disables the LED and pauses all auto-wake functions. The system remains dark and inactive until !!! is sent again to re-authorize operation.
