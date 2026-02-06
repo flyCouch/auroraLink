@@ -47,7 +47,7 @@ Mount your telescopes to the Picatinny rail system.
 
 Install Synchronet to C:\SBBS on a Windows 7 machine.
 
-Upload the AuroraLink10.ino to your Arduino.
+Upload the AuroraLink15.ino (or latest) to your Arduino.
 
 Align the telescopes until the signal LED (Pin 13) locks on.
 
