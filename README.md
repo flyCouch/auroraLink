@@ -47,3 +47,39 @@ Upload the AuroraLink15.ino (or latest) to your Arduino.
 Align the telescopes until the signal LED (Pin 13) locks on.
 
 Enter the BBS and join the local conversation.
+
+🖥️ Connecting via Terminal (Minicom / PuTTY)
+While Synchronet handles the backend BBS logic, you can interact with the Aurora-Link hardware directly using a terminal emulator. This is ideal for initial signal testing or "handshaking" with the anchor.
+
+1. Terminal Configuration
+To communicate with the Arduino "Modem," set your terminal to the following parameters:
+
+Speed (Baud): 1200 
+
+Data Bits: 8
+
+Parity: None
+
+Stop Bits: 1
+
+Flow Control: None (XON/XOFF disabled)
+
+2. Using Minicom (Linux/macOS)
+Launch Minicom with the following command (replacing ttyUSB0 with your actual port):
+
+Bash
+
+minicom -b 1200 -D /dev/ttyUSB0
+To Re-align: Type !!! and press Enter. The "Self-Healing" logic will detect this string and force the Green Beacon to stay solid for 15 seconds, giving you time to adjust your telescope.
+
+3. Using PuTTY (Windows 7)
+Select Serial as the connection type.
+
+Enter your COM Port (e.g., COM3).
+
+Set Speed to 1200.
+
+Under the Terminal category, ensure "Implicit CR in every LF" is checked to keep the BBS text scrolling cleanly.
+
+A Quick Tip for Windows 7:
+Since you are using a 32-bit laptop, if you find that Minicom is a bit too "Linux-heavy" for your field tests, Tera Term is a fantastic, lightweight alternative for Windows 7. It handles the 1200-baud stream very gracefully and makes it easy to log your "Geometric Bridge" signal strength tests to a text file.
