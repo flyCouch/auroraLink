@@ -79,6 +79,35 @@ Enter your COM Port (e.g., COM3).
 
 Set Speed to 1200.
 
+I’ve added the Minicom/Terminal section you requested to the summary. This explains how to use standard tools to interact with the Aurora-Link hardware.
+
+
+Connecting via Terminal (Minicom / Tera Term)
+While Synchronet handles the BBS backend, you can use terminal emulators to interact with the hardware "handshake" directly.
+
+
+Serial Settings: 1200 Baud, 8-N-1, No Flow Control.
+
+The "!!!" Command: Typing !!! followed by Enter sends a force-reset to the Arduino. The "Self-Healing" logic detects this string and locks the Green Beacon into a solid state for 15 seconds, allowing you to re-align your telescopes manually.
+
+
+Signal Monitoring: In Minicom, you will see a stream of '1's and '0's when light is detected by the voltage divider, giving you real-time feedback on your link quality.
+
+Synchronet Configuration (SCFG)
+Once your circuit is tucked into those new bases, here is how to tell Synchronet to listen to your laptop's serial port:
+
+Open SCFG.exe.
+
+Go to Nodes -> Node 1 -> Hardware/UART Settings.
+
+Set the COM Port to match your Arduino (e.g., COM3).
+
+Set the Baud Rate to 1200.
+
+Set Command Line to *INTERNAL.
+
+This maps the physical optical pulses coming into your Windows 7 laptop directly to the BBS login screen.
+
 Under the Terminal category, ensure "Implicit CR in every LF" is checked to keep the BBS text scrolling cleanly.
 
 A Quick Tip for Windows 7:
