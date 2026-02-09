@@ -3,6 +3,9 @@
  * - Fix: Receiver is now ALWAYS active, even during Sighting Mode.
  * - Logic: A 20% light jump triggers an immediate decode attempt.
  * - Timing: Optimized for 10 Baud (100ms bits).
+
+ EDIT: I found setting deltaPercent to .06 works a lot better.
+ 
  */
 
 long baudRate = 10; 
@@ -115,3 +118,4 @@ char receiveByte() {
   digitalWrite(signalLedPin, LOW);
   return result;
 }
+
