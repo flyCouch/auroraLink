@@ -141,6 +141,8 @@ Flow Control: None (XON/XOFF or Hardware flow control should be disabled).
 Tool-Specific Tips
 PuTTY (Windows): Select the Serial radio button under "Connection type" on the main session screen. Enter your COM port (e.g., COM3) and set the speed to 1200.
 
+On the left, go to Terminal -> Local echo -> Force on.
+
 Tera Term (Windows): Go to Setup > Serial Port to adjust the baud rate from the default 9600 to 1200. Tera Term is particularly useful for your project because it supports VT100 control codes, which can be used to clear the screen or position the cursor if you decide to build a more complex interface later.
 
 Minicom (Linux/macOS): Use minicom -s to enter the setup menu and navigate to "Serial port setup" to change the Bps/Par/Bits to 1200 8N1.
