@@ -20,10 +20,8 @@ void setup() {
     // --- START INTERNAL ID SNIPPET ---
   Serial.println(F("\n========================================"));
   Serial.print(F("FILE:     ")); Serial.println(F(__FILE__)); // This shows the full path
-  //Serial.print(F("PROJECT:  ")); Serial.println(F("AuroraLink_Sentinel_V1"));
   Serial.print(F("COMPILED: ")); Serial.print(F(__DATE__)); 
   Serial.print(F(" | "));      Serial.println(F(__TIME__));
-  //Serial.println(F("STRATEGY: Safe, Sane, & Isolated"));
   Serial.println(F("========================================\n"));
   // --- END INTERNAL ID SNIPPET ---
   pinMode(ledPin, OUTPUT);
