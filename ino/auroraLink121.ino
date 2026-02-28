@@ -1,6 +1,5 @@
 /*
- * Aurora-Link v120-Visible - "The Laser-Focused Hub"
- * - Logic: Dedicated path for Visible Light Photodiode (East)
+ * Aurora-Link v121-Visible
  * - Hardware: Optimized for Laser Emitter and Digital Receiver
  * - Speed: 1200 Baud (Fast Blue/Visible)
  */
