@@ -1,4 +1,4 @@
-/* * PROJECT:  Aurora-Link v200-RX (Master Bridge)
+/* * PROJECT:  Aurora-Link v200-RX (Boss Bridge)
  * FILE:     auroraLink200_RX.ino
  * COMPILED: Mar 04, 2026 | 17:30:00
  */
