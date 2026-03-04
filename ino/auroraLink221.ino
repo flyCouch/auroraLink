@@ -1,6 +1,6 @@
-/* * PROJECT:  Aurora-Link v200-Unified
+/* * PROJECT:  Aurora-Link v221-Unified
  * STRATEGY: Hamming(7,4) / Analog Hysteresis / Dual-Switch
- * FILE:     auroraLink200_DualSwitch.ino
+ * FILE:     auroraLink221_DualSwitch.ino
  * DATE:     Mar 04, 2026
  */
 
@@ -66,7 +66,7 @@ void setup() {
   
   // MANDATORY PROJECT HEADER
   Serial.println(F("\n========================================"));
-  Serial.println(F("PROJECT:  Aurora Link v200-Unified"));
+  Serial.println(F("PROJECT:  Aurora Link v221-Unified"));
   Serial.print(F("FILE:     ")); Serial.println(F(__FILE__));
   Serial.print(F("DATE:     ")); Serial.println(F(__DATE__));
   Serial.print(F("TIME:     ")); Serial.println(F(__TIME__));
