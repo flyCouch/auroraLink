@@ -1,4 +1,4 @@
-/* * PROJECT:  Aurora-Link v200-TX (Slave Bridge)
+/* * PROJECT:  Aurora-Link v200-TX (Worker Bridge)
  * FILE:     auroraLink200_TX.ino
  * COMPILED: Mar 04, 2026 | 17:35:00
  */
