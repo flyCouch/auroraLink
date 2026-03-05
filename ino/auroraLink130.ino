@@ -35,7 +35,7 @@ void setup() {
   digitalWrite(ledPin, LOW); 
   digitalWrite(invLedPin, HIGH);
 
-  Serial.println(F("SYSTEM: Visible Link Active (1200 Baud)."));
+  Serial.println(F("SYSTEM: Visible Link Active (2400 Baud)."));
 }
 
 void loop() {
@@ -58,7 +58,7 @@ void processStream(int pin, long speed) {
   char c = receiveByte(pin, speed);
   if (c > 0) Serial.write(c);
   digitalWrite(signalLedPin, LOW);
-}
+}m
 
 void transmitByte(char c, long speed) {
   long bitTime = 1000000 / speed;
